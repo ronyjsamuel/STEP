@@ -52,9 +52,10 @@ $(document).ready(function(){
 		else if(($('#d1').css("background-color"))=="rgba(0, 0, 0, 0)"){
 				$('#d1').css("background-color","black");
 				$('#p1').css("color","yellow");
-				
-
-
+		}
+		else if(($('#d1').css("background-color"))=="rgb(0, 0, 0)"){
+				$('#d1').css("background-color","rgba(0, 0, 0, 0)");
+				$('#p1').css("color","black");
 		}	
 		//alert($('#d1').css("background-color"));	
 		
