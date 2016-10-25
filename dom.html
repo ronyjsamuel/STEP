@@ -5,53 +5,62 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="dom.js"></script>
 	<style>
-		div{
+		#d1{
     		border-style: solid;
     		padding-left: 20px;
     		padding-top: 40px;
     		margin-right: 1170px;
     		padding-bottom: 40px;
 		}
+		#d2{
+			border-style: solid;
+			padding-left: 20px;
+    		padding-top: 40px;
+    		margin-right: 1170px;
+    		padding-bottom: 40px;
+
+		}
 
 </style>
 </head>
 <body>
 	<div id="d1">
-		Enter number:	<input type="text" name="input" id="t1"><br><br>
-		<button id="b1">Form</button>
-		<button id="b2">Table</button>
+		<p id="p1">Enter number:</p><input type="text" name="input" id="t1"><br><br>
+		<button id="b1">Table</button>
+		<button id="b2">Form</button>
 		<button id="b3">Blue</button>
 		<button id="b4">Green</button>
 		<button id="b5">Reset</button>
 		<button id="b6">Invert</button>
+	</div><br><br>
+	<div id="d2">
+		<table border="1" id="tb1">
+			<tr>
+				<th>Sl no</th>
+				<th>Name</th>
+				<th>Mobile Number</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AK</td>
+				<td>979464694694</td>
+				<td>ABC HOUSE</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Rony</td>
+				<td>46946598621</td>
+				<td>XYZ HOUSE</td>
+			</tr>
+		</table>
+		
+			
+		<form id="fm1">
+			Name:<input type="text" name="text1" id="ft1"><br><br>
+			Number:<input type="text" name="text2" id="ft2">
+		</form>
 	</div>
-	<table border="1" id="tb1">
-		<tr>
-			<th>Sl no</th>
-			<th>Name</th>
-			<th>Mobile Number</th>
-			<th>Address</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>AK</td>
-			<td>979464694694</td>
-			<td>ABC HOUSE</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Rony</td>
-			<td>46946598621</td>
-			<td>XYZ HOUSE</td>
-		</tr>
-	</table>
-	
-	<br><br><br>
-
-	<form id="fm1">
-		Name:<input type="text" name="text1" id="ft1"><br><br>
-		Number:<input type="text" name="text2" id="ft2">
-	</form>
 
 </body>
 </html>
