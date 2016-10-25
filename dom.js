@@ -5,21 +5,25 @@ $(document).ready(function(){
 	$('#p1').css("color","black");
 
 	$('#b1').click(function(){
-		var a = $("#t1").val();    
-		if(a%2==0){
-			$("#d2").css("display", "block");
-			$("#tb1").css("display", "inline-block");
-			$("#fm1").css("display", "none");
-
+		var a = null;
+		a=parseInt(($("#t1").val())==''?null:$("#t1").val()); 
+		
+		if(a%2==0 && !isNaN(a)){
+		$("#d2").css("display", "block");
+		$("#tb1").css("display", "inline-block");
+		$("#fm1").css("display", "none");
 		}
-		else{
+
+		else if(a%2!=0 && !isNaN(a)){
 			$("#d2").css("display", "block");
 			$("#fm1").css("display", "inline-block");
 			$("#tb1").css("display", "none");	
 		}
+		
 	});
 
 	$('#b2').click(function(){
+		$("#d2").css("display", "block");
 		$("#fm1").css("display", "inline-block");
 		$("#tb1").css("display", "none");
 		
@@ -42,6 +46,7 @@ $(document).ready(function(){
 		$('#p1').css("color","black");
 
 	});
+
 	$('#b6').click(function(){
 		if(($('#d1').css("background-color"))=="rgb(0, 0, 255)"){
 				$('#d1').css("background-color","green");
@@ -56,9 +61,13 @@ $(document).ready(function(){
 		else if(($('#d1').css("background-color"))=="rgb(0, 0, 0)"){
 				$('#d1').css("background-color","rgba(0, 0, 0, 0)");
 				$('#p1').css("color","black");
-		}	
-		//alert($('#d1').css("background-color"));	
-		
+		}			
+	});
+
+	$('#b2').click(function(){
+		$("#d2").css("display", "block");
+		$("#fm1").css("display", "inline-block");
+		$("#fm1").css("display", "none");	
 	});
 
 });
